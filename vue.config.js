@@ -1,9 +1,8 @@
-const { defineConfig } = require('@vue/cli-service')
+const { defineConfig } = require('@vue/cli-service');
+
 module.exports = defineConfig({
-  transpileDependencies: true
-})
-module.exports = {
+  transpileDependencies: true,
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/Photo-Project/' // Le nom du sous-répertoire où ton site est hébergé
+    ? '/' // Utilise '/' pour la racine du domaine sur Netlify
     : '/'
-};
+});
