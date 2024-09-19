@@ -21,6 +21,7 @@
     "sharp": "^0.33.5",
     "swiper": "^11.1.9",
     "vue": "^3.2.13",
+    "vue-gtag-next": "^1.14.0",
     "vue-lazyload": "^3.0.0",
     "vue-router": "^4.4.3",
     "vuex": "^4.1.0"
