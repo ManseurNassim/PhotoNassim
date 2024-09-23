@@ -73,25 +73,27 @@ export default {
       }
     };
 
+    // Fonction pour aller à la photo précédente en tenant compte des filtres
     const prevPhoto = () => {
-      const index = photos.value.findIndex(
+      const index = filteredPhotos.value.findIndex(
         (photo) => photo.id === selectedPhotoId.value
       );
       if (index === 0) {
-        selectedPhotoId.value = photos.value[photos.value.length - 1].id;
+        selectedPhotoId.value = filteredPhotos.value[filteredPhotos.value.length - 1].id;
       } else {
-        selectedPhotoId.value = photos.value[index - 1].id;
+        selectedPhotoId.value = filteredPhotos.value[index - 1].id;
       }
     };
 
+    // Fonction pour aller à la photo suivante en tenant compte des filtres
     const nextPhoto = () => {
-      const index = photos.value.findIndex(
+      const index = filteredPhotos.value.findIndex(
         (photo) => photo.id === selectedPhotoId.value
       );
-      if (index === photos.value.length - 1) {
-        selectedPhotoId.value = photos.value[0].id;
+      if (index === filteredPhotos.value.length - 1) {
+        selectedPhotoId.value = filteredPhotos.value[0].id;
       } else {
-        selectedPhotoId.value = photos.value[index + 1].id;
+        selectedPhotoId.value = filteredPhotos.value[index + 1].id;
       }
     };
 
@@ -146,7 +148,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 150px; /* Fixed height for uniform size */
+  height: 150px;
   background-color: #f0f0f0;
 }
 

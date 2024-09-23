@@ -4,7 +4,7 @@ const photos = [
     "title": "Photo 1",
     "src": "./images/photo-01.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-01.jpg",
-    "keywords": []
+    "keywords": ["portrait","statue","monument","place","jour","Alger","Cheval","Sculpture","épée","cheval","sombre","noir et blanc","B&W"]
   },
 
   {
@@ -12,7 +12,7 @@ const photos = [
     "title": "Photo 2",
     "src": "./images/photo-02.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-02.jpg",
-    "keywords": [],
+    "keywords": ["paysage","plage","couché de soleil","soleil","couché","drapeau","eau","pierre","montagne","oiseau","nature"],
     "isBest": true
   },
   {
@@ -20,7 +20,7 @@ const photos = [
     "title": "Photo 4",
     "src": "./images/photo-04.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-04.jpg",
-    "keywords": []
+    "keywords": ["portrait","vue de haut","monument","Oran","Ville","statue","fort","santa cruz","architecture","port","cargo",'lumineux',"jour"]
   },  {
     "id": 54,
     "title": "Photo 54",
@@ -62,7 +62,7 @@ const photos = [
     "title": "Photo 3",
     "src": "./images/photo-03.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-03.jpg",
-    "keywords": [],
+    "keywords": ["portrait","statue","monument","place","jour","Alger","Cheval","Sculpture","épée","cheval","lumineux"],
     "isBest": true
   },  {
     "id": 56,
@@ -77,7 +77,7 @@ const photos = [
     "title": "Photo 6",
     "src": "./images/photo-06.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-06.jpg",
-    "keywords": [],
+    "keywords": ["paysage","montagne","village","nature","kabylie","kabyle","vallé","maison","vue de haut","lumineux","jour","vert"],
     "isBest": true
   },
   {
@@ -85,42 +85,42 @@ const photos = [
     "title": "Photo 7",
     "src": "./images/photo-07.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-07.jpg",
-    "keywords": []
+    "keywords": ["masjid","mosquée","architecture","jour","portrait","alger"]
   },
   {
     "id": 8,
     "title": "Photo 8",
     "src": "./images/photo-08.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-08.jpg",
-    "keywords": []
+    "keywords": ["nuage","ciel","portrait","vue du ciel","jour"]
   },  
   {
     "id": 10,
     "title": "Photo 10",
     "src": "./images/photo-10.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-10.jpg",
-    "keywords": []
+    "keywords": ["oran","cargo","arbre","nature","mer","falaise","montagne","portrait","vue de haut","jour"]
   },
   {
     "id": 11,
     "title": "Photo 11",
     "src": "./images/photo-11.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-11.jpg",
-    "keywords": []
+    "keywords": ["oran","ville","vue de haut","cadre","portrait","plat","jour","ciel","fort","orangé"]
   },
   {
     "id": 12,
     "title": "Photo 12",
     "src": "./images/photo-12.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-12.jpg",
-    "keywords": []
+    "keywords": ["masjid","mosquée","couché de soleil","jour","mer","montagne","ville","architecture","oran"]
   },
   {
     "id": 13,
     "title": "Photo 13",
     "src": "./images/photo-13.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-13.jpg",
-    "keywords": [],
+    "keywords": ["paysage","village","vert","nature","jour","ciel","nuage","maison","vue de haut","arbre","kabyle","kabylie"],
     "isBest": true
   },
   {
@@ -128,7 +128,7 @@ const photos = [
     "title": "Photo 14",
     "src": "./images/photo-14.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-14.jpg",
-    "keywords": [],
+    "keywords": ["fort","santa cruz","orangé","lumineux","jour","rocher","architecture","oran"],
     "isBest": true
   },  {
     "id": 51,
@@ -143,14 +143,14 @@ const photos = [
     "title": "Photo 15",
     "src": "./images/photo-15.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-15.jpg",
-    "keywords": []
+    "keywords": ["monument","statue","soldat","homme","arme","jour","alger","Monument Martyrs","Maqam Echahid","Maqam chahid","portrait"]
   },
   {
     "id": 16,
     "title": "Photo 16",
     "src": "./images/photo-16.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-16.jpg",
-    "keywords": [],
+    "keywords": ["portrait","ville","arbre","vue de haut","mer","alger","jour","ciel","architecture"],
     "isBest": true
   },
   {
@@ -158,14 +158,14 @@ const photos = [
     "title": "Photo 17",
     "src": "./images/photo-17.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-17.jpg",
-    "keywords": []
+    "keywords": ["nuage","ciel","portrait","vue du ciel","jour"]
   },
   {
     "id": 18,
     "title": "Photo 18",
     "src": "./images/photo-18.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-18.jpg",
-    "keywords": []
+    "keywords": ["alger","port","portrait","mer","vue de haut","architecture","jour","ciel"]
   },
   {
     "id": 19,
@@ -332,7 +332,7 @@ const photos = [
     "title": "Photo 5",
     "src": "./images/photo-05.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-05.jpg",
-    "keywords": [],
+    "keywords": ["masjid","alger","mosquée","dome","dôme","portrait","lumineux","oiseau","architecture","jour"],
     "isBest": true
   }, 
   {
