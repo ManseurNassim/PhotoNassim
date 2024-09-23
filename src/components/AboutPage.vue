@@ -6,7 +6,7 @@
 
     <!-- Biographie détaillée -->
     <p>
-      Je suis Nassim Manseur, un étudiant en informatique et passioné de la photographie. J'aime beaucoup la photo et j'ai donc décidé de partager sur se site les clichés que je me prend durant mes voyages.
+      Je suis Nassim Manseur, un étudiant en informatique et passioné de la photographie. J'aime beaucoup la photo et j'ai donc décidé de partager sur se site les clichés avec leurs qualités originelles, que je prend durant mes voyages.
     </p><!-- Section d'édition des images -->
     <h2>Comment j'édite mes images</h2>
     <div class="editing-steps-container">
