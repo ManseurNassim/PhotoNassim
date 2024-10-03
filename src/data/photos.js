@@ -4,7 +4,7 @@ const photos = [
     "title": "Photo 1",
     "src": "./images/photo-01.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-01.jpg",
-    "keywords": ["portrait","statue","monument","place","jour","Alger","Cheval","Sculpture","épée","cheval","sombre","noir et blanc","B&W"]
+    "keywords": ["portrait","statue","monument","place","jour","Alger","Cheval","Sculpture","épée","cheval","lumineux"],
   },
 
   {
@@ -34,7 +34,7 @@ const photos = [
     "title": "Photo 37",
     "src": "./images/photo-37.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-37.jpg",
-    "keywords": [],
+    "keywords": ["couché de soleil","soleil","roche","mer","jour","orange","nuage","ciel"],
     "isBest": true
   },  {
     "id": 63,
@@ -62,7 +62,7 @@ const photos = [
     "title": "Photo 3",
     "src": "./images/photo-03.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-03.jpg",
-    "keywords": ["portrait","statue","monument","place","jour","Alger","Cheval","Sculpture","épée","cheval","lumineux"],
+    "keywords": ["portrait","statue","monument","place","jour","Alger","Cheval","Sculpture","épée","cheval","sombre","noir et blanc","B&W"],
     "isBest": true
   },  {
     "id": 56,
@@ -172,28 +172,28 @@ const photos = [
     "title": "Photo 19",
     "src": "./images/photo-19.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-19.jpg",
-    "keywords": []
+    "keywords": ["ciel","nuages","nuage","bleu","avion","ailes","portrait","jour","vue du ciel"]
   },
   {
     "id": 20,
     "title": "Photo 20",
     "src": "./images/photo-20.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-20.jpg",
-    "keywords": []
+    "keywords": ["nuit","ville","voitures","voiture","animé","soir","vue de haut","portrait","route"]
   },
   {
     "id": 21,
     "title": "Photo 21",
     "src": "./images/photo-21.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-21.jpg",
-    "keywords": []
+    "keywords": ["nature","eau","jour","roche","rocher","mer","pierre","vagues","portrait"]
   },
   {
     "id": 22,
     "title": "Photo 22",
     "src": "./images/photo-22.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-22.jpg",
-    "keywords": [],
+    "keywords": ["portrait","ruines","romaine","romain","jour","orange","nature","historique","végétation","arbres"],
     "isBest": true
   },
   {
@@ -201,21 +201,21 @@ const photos = [
     "title": "Photo 23",
     "src": "./images/photo-23.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-23.jpg",
-    "keywords": []
+    "keywords": ["nuit","ville","voitures","voiture","animé","soir","vue de haut","portrait","route"]
   },
   {
     "id": 24,
     "title": "Photo 24",
     "src": "./images/photo-24.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-24.jpg",
-    "keywords": []
+    "keywords": ["ciel","nuages","nuage","bleu","avion","ailes","portrait","jour","vue du ciel"]
   },
   {
     "id": 25,
     "title": "Photo 25",
     "src": "./images/photo-25.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-25.jpg",
-    "keywords": [],
+    "keywords": ["statue","alger","portrait","jour","cheval","épée","monument","nuages","ciel","doré","historique","émir","abdelkader","vue du bas","vue d'en bas","sculpture"],
     "isBest": true
   },
   {
@@ -223,21 +223,21 @@ const photos = [
     "title": "Photo 26",
     "src": "./images/photo-26.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-26.jpg",
-    "keywords": []
+    "keywords": ["oran","jour","batiment","tour","ciel","moderne","palmier","portrait"]
   },
   {
     "id": 27,
     "title": "Photo 27",
     "src": "./images/photo-27.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-27.jpg",
-    "keywords": []
+    "keywords": ["oran","mosquée","montagne","ville","masjid","couché de soleil","mer","doré","orange","architecture","jour"]
   },
   {
     "id": 28,
     "title": "Photo 28",
     "src": "./images/photo-28.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-28.jpg",
-    "keywords": []
+    "keywords": ["nuit","paysage","kabylie","kabyle","villages","noir","lumières","ciel","maison"]
   },
 
   {
@@ -245,15 +245,22 @@ const photos = [
     "title": "Photo 30",
     "src": "./images/photo-30.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-30.jpg",
-    "keywords": []
+    "keywords": ["ville","voitures","voiture","animé","soir","vue de haut","portrait","route"]
   },
   {
     "id": 31,
     "title": "Photo 31",
     "src": "./images/photo-31.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-31.jpg",
-    "keywords": [],
+    "keywords": ["alger","ville","portrait","jour","lumineux","vue de haut","mer","arbre","nuage","port"],
     "isBest": true
+  },
+  {
+    "id": 32,
+    "title": "Photo 32",
+    "src": "./images/photo-32.jpg",
+    "thumbnailSrc": "./images/thumbnails/photo-32.jpg",
+    "keywords": ["nuit","ville","voitures","voiture","animé","soir","vue de haut","portrait","route"]
   },
 
   {
@@ -261,28 +268,28 @@ const photos = [
     "title": "Photo 33",
     "src": "./images/photo-33.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-33.jpg",
-    "keywords": []
+    "keywords": ["lune","nuit","sombre","noir","clair","lumineux","portrait"]
   },
   {
     "id": 34,
     "title": "Photo 34",
     "src": "./images/photo-34.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-34.jpg",
-    "keywords": []
+    "keywords": ["nuit","ville","voitures","voiture","animé","soir","vue de haut","portrait","route"]
   },
   {
     "id": 35,
     "title": "Photo 35",
     "src": "./images/photo-35.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-35.jpg",
-    "keywords": []
+    "keywords": ["lune","nuit","sombre","noir","clair","lumineux","portrait"]
   },
   {
     "id": 36,
     "title": "Photo 36",
     "src": "./images/photo-36.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-36.jpg",
-    "keywords": []
+    "keywords": ["lune","nuit","sombre","noir","clair","lumineux","portrait"]
   },
 
   {
@@ -290,7 +297,7 @@ const photos = [
     "title": "Photo 38",
     "src": "./images/photo-38.jpg",
     "thumbnailSrc": "./images/thumbnails/photo-38.jpg",
-    "keywords": [],
+    "keywords": ["ville","rue","jour","lumière","voiture","architecture","batiment","moto","arbre","ciel","nuage","alger","profond","ville"],
     "isBest": true
   },  {
     "id": 68,
