@@ -1,4 +1,4 @@
-const photos = [
+module.exports = { photos: [
   {
     "id": 1,
     "title": "Photo 1",
@@ -2521,6 +2521,4 @@ const photos = [
     ],
     "isBest": false
   }
-];
-
-export default photos;
+] };
