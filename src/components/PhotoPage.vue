@@ -3,7 +3,7 @@
     <input
       type="text"
       v-model="searchQuery"
-      placeholder="Rechercher par mots-clés, essayer paysage, architecture, nuit ..."
+      placeholder="Recherche par mots-clés(essayez paysage, architecture, nuit ...)"
       class="search-bar"
     />
     <div class="photos-grid">
