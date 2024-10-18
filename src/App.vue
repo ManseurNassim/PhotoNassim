@@ -1,11 +1,11 @@
 <template>
   <div id="app" :class="{ 'dark-theme': isDarkTheme }">
-    <!-- Inclure la barre de navigation avec la classe conditionnelle pour la cacher -->
+    <!-- Inclure la barre de navigation -->
     <NavBar :class="{ hidden: isHidden }" />
     <!-- Afficher la vue correspondante à la route -->
     <router-view />
-    <!-- Ajouter le bouton de changement de thème avec la classe conditionnelle pour le cacher -->
-    <ThemeToggleButton :class="{ hidden: isHidden }" />
+    <!-- Ajouter le bouton de changement de thème -->
+    <ThemeToggleButton :class="{ hidden: isHidden }" @click="toggleTheme" />
   </div>
 </template>
 
@@ -66,35 +66,44 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  transition: background-color 0.3s; /* Transition pour le changement de fond */
+}
+
+/* Styles généraux pour le conteneur de l'application */
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  transition: background-color 0.3s, color 0.3s;
+  height: 100%;
+  transition: color 0.3s; /* Transition pour le changement de couleur */
 }
 
 /* Dark theme styles */
 .dark-theme {
-  background-color: #121212;
-  color: #e0e0e0;
+  background-color: #121212; /* Couleur de fond en mode nuit */
+  color: #e0e0e0; /* Couleur de texte en mode nuit */
 }
 
 .dark-theme h1 {
-  color: #ffffff;
+  color: #ffffff; /* Couleur des titres en mode nuit */
 }
 
 .dark-theme .photo-item {
-  background-color: #1e1e1e;
+  background-color: #1e1e1e; /* Couleur de fond des éléments photo en mode nuit */
 }
 
 .dark-theme .photo-view-container {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8); /* Couleur de fond de la vue photo en mode nuit */
 }
 
 .dark-theme .photo-view-image {
-  border: 1px solid #ffffff;
+  border: 1px solid #ffffff; /* Bordure des images en mode nuit */
 }
 
 /* Classe pour cacher la navbar et les icônes */
@@ -102,5 +111,16 @@ export default {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0.3s, opacity 0.3s ease-in-out;
+}
+
+/* Supprimez le style de fond de la navbar lorsqu'elle est cachée */
+.navbar.hidden {
+  background-color: transparent; /* Pas de couleur de fond pour la navbar cachée */
+}
+
+/* Styles spécifiques pour la NavBar en mode sombre */
+.dark-theme .navbar {
+  background-color: transparent; /* Pas de couleur de fond pour la NavBar visible */
+  color: #ffffff; /* Couleur du texte de la navbar en mode sombre */
 }
 </style>

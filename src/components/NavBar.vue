@@ -168,5 +168,4 @@ body.light-theme .burger-icon::after {
 .slide-leave-to {
   transform: translateX(-100%);
 }
-
 </style>
