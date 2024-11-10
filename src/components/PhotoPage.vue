@@ -3,7 +3,7 @@
     <input
       type="text"
       v-model="searchQuery"
-      placeholder="Recherche par mots-clés(essayez paysage, architecture, nuit ...)"
+      placeholder="Recherche par mots-clés (paysage, architecture, nuit...)"
       class="search-bar"
     />
     <div class="photos-grid">
@@ -17,18 +17,21 @@
       </div>
     </div>
 
-    <div v-if="selectedPhotoId" class="modal" @click="handleModalClick">
+    <!-- Lecteur d'image modal -->
+    <div
+      v-if="selectedPhotoId"
+      class="modal"
+      @click="handleModalClick"
+      @touchstart="handleTouchStart"
+      @touchend="handleTouchEnd"
+    >
       <div class="modal-content" @click.stop>
         <span class="close-button" @click="closeModal">&times;</span>
         <img :src="currentPhoto.src" :alt="currentPhoto.title" class="modal-photo" />
       </div>
       <div class="modal-navigation">
-        <button class="nav-button prev-button" @click="prevPhoto">
-          &#10094;
-        </button>
-        <button class="nav-button next-button" @click="nextPhoto">
-          &#10095;
-        </button>
+        <button class="nav-button prev-button" @click="prevPhoto">&#10094;</button>
+        <button class="nav-button next-button" @click="nextPhoto">&#10095;</button>
       </div>
     </div>
   </div>
@@ -46,8 +49,6 @@ export default {
     const searchQuery = ref('');
 
     const photos = computed(() => store.getters.allPhotos);
-
-    // Ajout d'un champ thumbnailSrc pour les vignettes dans les photos
     const filteredPhotos = computed(() => {
       if (searchQuery.value) {
         return store.getters.photosByKeyword(searchQuery.value.toLowerCase());
@@ -73,28 +74,36 @@ export default {
       }
     };
 
-    // Fonction pour aller à la photo précédente en tenant compte des filtres
+    // Gestion des mouvements de glissement
+    let touchStartX = 0;
+    const handleTouchStart = (e) => {
+      touchStartX = e.touches[0].clientX;
+    };
+
+    const handleTouchEnd = (e) => {
+      const touchEndX = e.changedTouches[0].clientX;
+      const touchDiff = touchStartX - touchEndX;
+      if (Math.abs(touchDiff) > 50) {
+        touchDiff > 0 ? nextPhoto() : prevPhoto();
+      }
+    };
+
     const prevPhoto = () => {
       const index = filteredPhotos.value.findIndex(
         (photo) => photo.id === selectedPhotoId.value
       );
-      if (index === 0) {
-        selectedPhotoId.value = filteredPhotos.value[filteredPhotos.value.length - 1].id;
-      } else {
-        selectedPhotoId.value = filteredPhotos.value[index - 1].id;
-      }
+      selectedPhotoId.value = index === 0
+        ? filteredPhotos.value[filteredPhotos.value.length - 1].id
+        : filteredPhotos.value[index - 1].id;
     };
 
-    // Fonction pour aller à la photo suivante en tenant compte des filtres
     const nextPhoto = () => {
       const index = filteredPhotos.value.findIndex(
         (photo) => photo.id === selectedPhotoId.value
       );
-      if (index === filteredPhotos.value.length - 1) {
-        selectedPhotoId.value = filteredPhotos.value[0].id;
-      } else {
-        selectedPhotoId.value = filteredPhotos.value[index + 1].id;
-      }
+      selectedPhotoId.value = index === filteredPhotos.value.length - 1
+        ? filteredPhotos.value[0].id
+        : filteredPhotos.value[index + 1].id;
     };
 
     return {
@@ -106,6 +115,8 @@ export default {
       openModal,
       closeModal,
       handleModalClick,
+      handleTouchStart,
+      handleTouchEnd,
       prevPhoto,
       nextPhoto,
     };
@@ -121,6 +132,7 @@ export default {
   align-items: center;
 }
 
+/* Barre de recherche et grille de photos */
 .search-bar {
   padding: 10px;
   margin-bottom: 20px;
@@ -145,10 +157,10 @@ export default {
   overflow: hidden;
   border-radius: 5px;
   transition: transform 0.2s;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 150px;
   background-color: #f0f0f0;
 }
 
@@ -164,6 +176,7 @@ export default {
   border-radius: 5px;
 }
 
+/* Modal de visualisation des photos */
 .modal {
   position: fixed;
   top: 0;
@@ -205,6 +218,7 @@ export default {
   object-fit: contain;
 }
 
+/* Navigation dans le modal */
 .modal-navigation {
   position: fixed;
   bottom: 20px;
@@ -221,86 +235,13 @@ export default {
   border: none;
   color: #fff;
   font-size: 30px;
-  line-height: 1;
   cursor: pointer;
   padding: 10px;
-  transition: transform 0.3s, color 0.3s, opacity 0.3s;
   opacity: 0.8;
 }
 
 .nav-button:hover {
-  transform: scale(1.2);
   color: #ddd;
   opacity: 1;
-}
-
-.prev-button {
-  margin-right: auto;
-}
-
-.next-button {
-  margin-left: auto;
-}
-
-@media (max-width: 768px) {
-  .photos-grid {
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 10px;
-  }
-
-  .nav-button {
-    font-size: 25px;
-    padding: 8px;
-  }
-}
-
-@media (max-width: 480px) {
-  .search-bar {
-    max-width: 100%;
-  }
-
-  .nav-button {
-    font-size: 20px;
-    padding: 5px;
-  }
-}
-
-/* Styles pour le mode nuit */
-.dark-theme .search-bar {
-  border: 1px solid #666;
-  background-color: #333;
-  color: #fff;
-}
-
-.dark-theme .photos-grid {
-  background-color: #1e1e1e;
-}
-
-.dark-theme .photo-item {
-  background-color: #2e2e2e;
-}
-
-.dark-theme .photo-thumbnail {
-  border: 1px solid #666;
-}
-
-.dark-theme .modal {
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.dark-theme .modal-content {
-  border: 1px solid #444;
-}
-
-.dark-theme .close-button {
-  color: #fff;
-}
-
-.dark-theme .nav-button {
-  color: #fff;
-}
-
-.dark-theme .nav-button:hover {
-  color: #ddd;
 }
 </style>

@@ -26,6 +26,8 @@
     "vue-gtag-next": "^1.14.0",
     "vue-lazyload": "^3.0.0",
     "vue-router": "^4.4.3",
+    "vue2-touch-events": "^3.2.3",
+    "vue3-touch-events": "^4.2.0",
     "vuex": "^4.1.0"
   },
   "devDependencies": {

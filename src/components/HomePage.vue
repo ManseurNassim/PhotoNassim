@@ -59,19 +59,13 @@ export default {
 
 /* Item photo */
 .photo-item {
-  overflow: hidden;
-  border-radius: 10px;
+  overflow: auto;
+  border-radius: 10px; /* Rayon de bordure de l'élément parent */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 100%;
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  padding: 10px; /* Ajout d'un peu de padding pour éviter que les photos soient trop proches des bords */
-}
-
-/* Effet de survol des photos */
-.photo-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  border: 2px solid #ffffff;
 }
 
 /* Image des photos */
@@ -81,13 +75,21 @@ export default {
   height: auto;
   max-height: 80vh;
   object-fit: contain;
+  border-radius: 10px; /* Le même rayon que .photo-item pour que l'image épouse la forme */
   transition: filter 0.3s ease;
+}
+
+/* Effet de survol des photos */
+.photo-item:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Effet de survol des images */
 .photo-item:hover .photo-image {
   filter: brightness(1.05) contrast(1.05);
 }
+
 
 /* Styles pour le mode nuit */
 .dark-theme .home-title {
