@@ -70,6 +70,7 @@ body.dark-theme .theme-toggle-button {
     font-size: 24px; /* Réduction de la taille de l'icône */
     top: 15px; /* Ajustement de l'espacement */
     right: 15px; /* Ajustement de l'espacement */
+    transition: 0.3s;
   }
 }
 
@@ -80,6 +81,7 @@ body.dark-theme .theme-toggle-button {
     font-size: 20px; /* Réduction de la taille de l'icône */
     top: 12px; /* Plus d'espacement pour les très petits écrans */
     right: 12px; /* Plus d'espacement pour les très petits écrans */
+    transition: 0.3s;
   }
 }
 </style>

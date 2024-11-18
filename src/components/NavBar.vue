@@ -67,7 +67,6 @@ export default {
   height: 3px;
   background-color: #333; /* Noir par défaut */
   position: relative;
-  transition: background-color 0.3s ease; /* Transition douce pour la couleur */
 }
 
 .burger-icon::before,
