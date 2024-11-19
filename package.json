@@ -1,7 +1,9 @@
 {
   "name": "photo-gallery",
-  "version": "0.1.0",
+  "version": "1.0",
   "private": true,
+  "description": "Site de partage de mes photos",
+  "author": "Nassim MANSEUR",
   "scripts": {
     "optimize-images": "node scripts/optimize-images.js",
     "serve": "vue-cli-service serve",
