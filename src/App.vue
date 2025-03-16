@@ -71,7 +71,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  transition: background-color 0.3s; /* Transition pour le changement de fond */
+  transition: background-color 0.2s; /* Transition pour le changement de fond */
 }
 
 /* Styles généraux pour le conteneur de l'application */
@@ -81,7 +81,7 @@ html, body {
   color: #2c3e50;
   margin-top: 60px;
   height: 100%;
-  transition: color 0.3s; /* Transition pour le changement de couleur */
+  transition: color 0.2s; /* Transition pour le changement de couleur */
 }
 
 /* Dark theme styles */
@@ -110,7 +110,7 @@ html, body {
 .hidden {
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0.3s, opacity 0.3s ease-in-out;
+  transition: 0.3s;
 }
 
 /* Supprimez le style de fond de la navbar lorsqu'elle est cachée */

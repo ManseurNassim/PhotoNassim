@@ -77,7 +77,7 @@ export default {
   background-color: #333; /* Noir par défaut */
   position: absolute;
   left: 0;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.2s ;
 }
 
 .burger-icon::before {
@@ -142,7 +142,7 @@ body.light-theme .burger-icon::after {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition: color 0.3s, transform 0.3s ;
 }
 
 .navbar-start a:hover {
@@ -157,7 +157,7 @@ body.light-theme .burger-icon::after {
 /* Animation de transition du menu */
 .slide-enter-active,
 .slide-leave-active {
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ;
 }
 
 .slide-enter {

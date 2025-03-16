@@ -2,8 +2,8 @@ const photos = [
   {
     "id": 1,
     "title": "Photo 1",
-    "src": "./images/photo-01.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-01.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-01.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-01.jpg",
     "keywords": [
       "portrait",
       "statue",
@@ -30,8 +30,8 @@ const photos = [
   {
     "id": 2,
     "title": "Photo 2",
-    "src": "./images/photo-02.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-02.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-02.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-02.jpg",
     "keywords": [
       "paysage",
       "plage",
@@ -61,8 +61,8 @@ const photos = [
   {
     "id": 4,
     "title": "Photo 4",
-    "src": "./images/photo-04.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-04.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-04.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-04.jpg",
     "keywords": [
       "portrait",
       "vue de haut",
@@ -93,8 +93,8 @@ const photos = [
   {
     "id": 54,
     "title": "Photo 54",
-    "src": "./images/photo-54.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-54.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-54.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-54.jpg",
     "keywords": [
       "Ciel",
       "Jour",
@@ -115,8 +115,8 @@ const photos = [
   {
     "id": 37,
     "title": "Photo 37",
-    "src": "./images/photo-37.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-37.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-37.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-37.jpg",
     "keywords": [
       "couché de soleil",
       "soleil",
@@ -144,8 +144,8 @@ const photos = [
   {
     "id": 63,
     "title": "Photo 63",
-    "src": "./images/photo-63.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-63.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-63.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-63.jpg",
     "keywords": [
       "Eau",
       "Ciel",
@@ -166,8 +166,8 @@ const photos = [
   {
     "id": 80,
     "title": "Photo 80",
-    "src": "./images/photo-80.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-80.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-80.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-80.jpg",
     "keywords": [
       "Eau",
       "Ciel",
@@ -188,8 +188,8 @@ const photos = [
   {
     "id": 29,
     "title": "Photo 29",
-    "src": "./images/photo-29.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-29.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-29.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-29.jpg",
     "keywords": [
       "Bâtiment",
       "Éclairage",
@@ -210,8 +210,8 @@ const photos = [
   {
     "id": 3,
     "title": "Photo 3",
-    "src": "./images/photo-03.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-03.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-03.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-03.jpg",
     "keywords": [
       "portrait",
       "statue",
@@ -241,8 +241,8 @@ const photos = [
   {
     "id": 56,
     "title": "Photo 56",
-    "src": "./images/photo-56.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-56.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-56.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-56.jpg",
     "keywords": [
       "Cheval",
       "Nuage",
@@ -262,8 +262,8 @@ const photos = [
   {
     "id": 6,
     "title": "Photo 6",
-    "src": "./images/photo-06.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-06.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-06.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-06.jpg",
     "keywords": [
       "paysage",
       "montagne",
@@ -294,8 +294,8 @@ const photos = [
   {
     "id": 7,
     "title": "Photo 7",
-    "src": "./images/photo-07.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-07.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-07.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-07.jpg",
     "keywords": [
       "masjid",
       "mosquée",
@@ -318,8 +318,8 @@ const photos = [
   {
     "id": 8,
     "title": "Photo 8",
-    "src": "./images/photo-08.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-08.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-08.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-08.jpg",
     "keywords": [
       "nuage",
       "ciel",
@@ -342,8 +342,8 @@ const photos = [
   {
     "id": 10,
     "title": "Photo 10",
-    "src": "./images/photo-10.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-10.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-10.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-10.jpg",
     "keywords": [
       "oran",
       "cargo",
@@ -371,8 +371,8 @@ const photos = [
   {
     "id": 11,
     "title": "Photo 11",
-    "src": "./images/photo-11.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-11.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-11.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-11.jpg",
     "keywords": [
       "oran",
       "ville",
@@ -400,8 +400,8 @@ const photos = [
   {
     "id": 12,
     "title": "Photo 12",
-    "src": "./images/photo-12.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-12.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-12.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-12.jpg",
     "keywords": [
       "masjid",
       "mosquée",
@@ -429,8 +429,8 @@ const photos = [
   {
     "id": 13,
     "title": "Photo 13",
-    "src": "./images/photo-13.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-13.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-13.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-13.jpg",
     "keywords": [
       "paysage",
       "village",
@@ -460,8 +460,8 @@ const photos = [
   {
     "id": 14,
     "title": "Photo 14",
-    "src": "./images/photo-14.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-14.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-14.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-14.jpg",
     "keywords": [
       "fort",
       "santa cruz",
@@ -489,8 +489,8 @@ const photos = [
   {
     "id": 51,
     "title": "Photo 51",
-    "src": "./images/photo-51.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-51.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-51.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-51.jpg",
     "keywords": [
       "Ciel",
       "Montagne",
@@ -510,8 +510,8 @@ const photos = [
   {
     "id": 15,
     "title": "Photo 15",
-    "src": "./images/photo-15.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-15.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-15.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-15.jpg",
     "keywords": [
       "monument",
       "statue",
@@ -538,8 +538,8 @@ const photos = [
   {
     "id": 16,
     "title": "Photo 16",
-    "src": "./images/photo-16.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-16.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-16.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-16.jpg",
     "keywords": [
       "portrait",
       "ville",
@@ -567,8 +567,8 @@ const photos = [
   {
     "id": 17,
     "title": "Photo 17",
-    "src": "./images/photo-17.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-17.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-17.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-17.jpg",
     "keywords": [
       "nuage",
       "ciel",
@@ -590,8 +590,8 @@ const photos = [
   {
     "id": 18,
     "title": "Photo 18",
-    "src": "./images/photo-18.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-18.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-18.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-18.jpg",
     "keywords": [
       "alger",
       "port",
@@ -617,8 +617,8 @@ const photos = [
   {
     "id": 19,
     "title": "Photo 19",
-    "src": "./images/photo-19.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-19.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-19.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-19.jpg",
     "keywords": [
       "ciel",
       "nuages",
@@ -645,8 +645,8 @@ const photos = [
   {
     "id": 20,
     "title": "Photo 20",
-    "src": "./images/photo-20.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-20.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-20.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-20.jpg",
     "keywords": [
       "nuit",
       "ville",
@@ -674,8 +674,8 @@ const photos = [
   {
     "id": 21,
     "title": "Photo 21",
-    "src": "./images/photo-21.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-21.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-21.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-21.jpg",
     "keywords": [
       "nature",
       "eau",
@@ -702,8 +702,8 @@ const photos = [
   {
     "id": 22,
     "title": "Photo 22",
-    "src": "./images/photo-22.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-22.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-22.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-22.jpg",
     "keywords": [
       "portrait",
       "ruines",
@@ -731,8 +731,8 @@ const photos = [
   {
     "id": 23,
     "title": "Photo 23",
-    "src": "./images/photo-23.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-23.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-23.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-23.jpg",
     "keywords": [
       "nuit",
       "ville",
@@ -759,8 +759,8 @@ const photos = [
   {
     "id": 24,
     "title": "Photo 24",
-    "src": "./images/photo-24.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-24.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-24.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-24.jpg",
     "keywords": [
       "ciel",
       "nuages",
@@ -787,8 +787,8 @@ const photos = [
   {
     "id": 25,
     "title": "Photo 25",
-    "src": "./images/photo-25.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-25.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-25.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-25.jpg",
     "keywords": [
       "statue",
       "alger",
@@ -823,8 +823,8 @@ const photos = [
   {
     "id": 26,
     "title": "Photo 26",
-    "src": "./images/photo-26.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-26.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-26.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-26.jpg",
     "keywords": [
       "oran",
       "jour",
@@ -850,8 +850,8 @@ const photos = [
   {
     "id": 27,
     "title": "Photo 27",
-    "src": "./images/photo-27.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-27.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-27.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-27.jpg",
     "keywords": [
       "oran",
       "mosquée",
@@ -881,8 +881,8 @@ const photos = [
   {
     "id": 28,
     "title": "Photo 28",
-    "src": "./images/photo-28.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-28.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-28.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-28.jpg",
     "keywords": [
       "nuit",
       "paysage",
@@ -910,8 +910,8 @@ const photos = [
   {
     "id": 30,
     "title": "Photo 30",
-    "src": "./images/photo-30.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-30.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-30.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-30.jpg",
     "keywords": [
       "ville",
       "voitures",
@@ -938,8 +938,8 @@ const photos = [
   {
     "id": 31,
     "title": "Photo 31",
-    "src": "./images/photo-31.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-31.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-31.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-31.jpg",
     "keywords": [
       "alger",
       "ville",
@@ -967,8 +967,8 @@ const photos = [
   {
     "id": 32,
     "title": "Photo 32",
-    "src": "./images/photo-32.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-32.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-32.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-32.jpg",
     "keywords": [
       "nuit",
       "ville",
@@ -996,8 +996,8 @@ const photos = [
   {
     "id": 33,
     "title": "Photo 33",
-    "src": "./images/photo-33.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-33.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-33.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-33.jpg",
     "keywords": [
       "lune",
       "nuit",
@@ -1023,8 +1023,8 @@ const photos = [
   {
     "id": 34,
     "title": "Photo 34",
-    "src": "./images/photo-34.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-34.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-34.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-34.jpg",
     "keywords": [
       "nuit",
       "ville",
@@ -1052,8 +1052,8 @@ const photos = [
   {
     "id": 35,
     "title": "Photo 35",
-    "src": "./images/photo-35.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-35.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-35.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-35.jpg",
     "keywords": [
       "lune",
       "nuit",
@@ -1079,8 +1079,8 @@ const photos = [
   {
     "id": 36,
     "title": "Photo 36",
-    "src": "./images/photo-36.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-36.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-36.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-36.jpg",
     "keywords": [
       "lune",
       "nuit",
@@ -1106,8 +1106,8 @@ const photos = [
   {
     "id": 38,
     "title": "Photo 38",
-    "src": "./images/photo-38.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-38.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-38.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-38.jpg",
     "keywords": [
       "ville",
       "rue",
@@ -1141,8 +1141,8 @@ const photos = [
   {
     "id": 68,
     "title": "Photo 68",
-    "src": "./images/photo-68.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-68.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-68.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-68.jpg",
     "keywords": [
       "Bâtiment",
       "Ciel",
@@ -1163,8 +1163,8 @@ const photos = [
   {
     "id": 39,
     "title": "Photo 39",
-    "src": "./images/photo-39.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-39.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-39.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-39.jpg",
     "keywords": [
       "Chat",
       "Felidae",
@@ -1184,8 +1184,8 @@ const photos = [
   {
     "id": 40,
     "title": "Photo 40",
-    "src": "./images/photo-40.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-40.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-40.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-40.jpg",
     "keywords": [
       "Ciel",
       "Bâtiment",
@@ -1205,8 +1205,8 @@ const photos = [
   {
     "id": 83,
     "title": "Photo 83",
-    "src": "./images/photo-83.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-83.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-83.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-83.jpg",
     "keywords": [
       "Ciel",
       "Tour",
@@ -1227,8 +1227,8 @@ const photos = [
   {
     "id": 89,
     "title": "Photo 89",
-    "src": "./images/photo-89.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-89.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-89.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-89.jpg",
     "keywords": [
       "Voiture",
       "Véhicule",
@@ -1248,8 +1248,8 @@ const photos = [
   {
     "id": 5,
     "title": "Photo 5",
-    "src": "./images/photo-05.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-05.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-05.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-05.jpg",
     "keywords": [
       "masjid",
       "alger",
@@ -1275,8 +1275,8 @@ const photos = [
   {
     "id": 41,
     "title": "Photo 41",
-    "src": "./images/photo-41.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-41.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-41.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-41.jpg",
     "keywords": [
       "Propriété",
       "Azure",
@@ -1296,8 +1296,8 @@ const photos = [
   {
     "id": 52,
     "title": "Photo 52",
-    "src": "./images/photo-52.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-52.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-52.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-52.jpg",
     "keywords": [
       "Monde",
       "Orange",
@@ -1318,8 +1318,8 @@ const photos = [
   {
     "id": 42,
     "title": "Photo 42",
-    "src": "./images/photo-42.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-42.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-42.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-42.jpg",
     "keywords": [
       "Ciel",
       "Eau",
@@ -1339,8 +1339,8 @@ const photos = [
   {
     "id": 43,
     "title": "Photo 43",
-    "src": "./images/photo-43.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-43.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-43.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-43.jpg",
     "keywords": [
       "Chat",
       "Œil",
@@ -1361,8 +1361,8 @@ const photos = [
   {
     "id": 65,
     "title": "Photo 65",
-    "src": "./images/photo-65.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-65.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-65.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-65.jpg",
     "keywords": [
       "Chat",
       "Felidae",
@@ -1383,8 +1383,8 @@ const photos = [
   {
     "id": 44,
     "title": "Photo 44",
-    "src": "./images/photo-44.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-44.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-44.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-44.jpg",
     "keywords": [
       "Oiseau",
       "Jour",
@@ -1404,8 +1404,8 @@ const photos = [
   {
     "id": 45,
     "title": "Photo 45",
-    "src": "./images/photo-45.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-45.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-45.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-45.jpg",
     "keywords": [
       "Oiseau",
       "Usine",
@@ -1424,8 +1424,8 @@ const photos = [
   {
     "id": 46,
     "title": "Photo 46",
-    "src": "./images/photo-46.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-46.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-46.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-46.jpg",
     "keywords": [
       "Chat",
       "Felidae",
@@ -1446,8 +1446,8 @@ const photos = [
   {
     "id": 53,
     "title": "Photo 53",
-    "src": "./images/photo-53.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-53.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-53.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-53.jpg",
     "keywords": [
       "Eau",
       "Ciel",
@@ -1468,8 +1468,8 @@ const photos = [
   {
     "id": 47,
     "title": "Photo 47",
-    "src": "./images/photo-47.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-47.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-47.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-47.jpg",
     "keywords": [
       "Ciel",
       "Azure",
@@ -1490,8 +1490,8 @@ const photos = [
   {
     "id": 48,
     "title": "Photo 48",
-    "src": "./images/photo-48.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-48.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-48.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-48.jpg",
     "keywords": [
       "Ciel",
       "Usine",
@@ -1512,8 +1512,8 @@ const photos = [
   {
     "id": 49,
     "title": "Photo 49",
-    "src": "./images/photo-49.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-49.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-49.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-49.jpg",
     "keywords": [
       "Ciel",
       "Bâtiment",
@@ -1532,8 +1532,8 @@ const photos = [
   {
     "id": 50,
     "title": "Photo 50",
-    "src": "./images/photo-50.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-50.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-50.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-50.jpg",
     "keywords": [
       "Chat",
       "Carnivore",
@@ -1552,8 +1552,8 @@ const photos = [
   {
     "id": 57,
     "title": "Photo 57",
-    "src": "./images/photo-57.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-57.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-57.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-57.jpg",
     "keywords": [
       "Eau",
       "Ciel",
@@ -1573,8 +1573,8 @@ const photos = [
   {
     "id": 58,
     "title": "Photo 58",
-    "src": "./images/photo-58.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-58.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-58.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-58.jpg",
     "keywords": [
       "Voiture",
       "Bâtiment",
@@ -1594,8 +1594,8 @@ const photos = [
   {
     "id": 59,
     "title": "Photo 59",
-    "src": "./images/photo-59.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-59.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-59.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-59.jpg",
     "keywords": [
       "Nuage",
       "Ciel",
@@ -1614,8 +1614,8 @@ const photos = [
   {
     "id": 60,
     "title": "Photo 60",
-    "src": "./images/photo-60.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-60.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-60.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-60.jpg",
     "keywords": [
       "Statue",
       "Sculpture",
@@ -1634,8 +1634,8 @@ const photos = [
   {
     "id": 61,
     "title": "Photo 61",
-    "src": "./images/photo-61.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-61.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-61.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-61.jpg",
     "keywords": [
       "Chat",
       "Felidae",
@@ -1655,8 +1655,8 @@ const photos = [
   {
     "id": 62,
     "title": "Photo 62",
-    "src": "./images/photo-62.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-62.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-62.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-62.jpg",
     "keywords": [
       "Nuage",
       "Ciel",
@@ -1676,8 +1676,8 @@ const photos = [
   {
     "id": 64,
     "title": "Photo 64",
-    "src": "./images/photo-64.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-64.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-64.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-64.jpg",
     "keywords": [
       "Chat",
       "Felidae",
@@ -1697,8 +1697,8 @@ const photos = [
   {
     "id": 66,
     "title": "Photo 66",
-    "src": "./images/photo-66.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-66.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-66.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-66.jpg",
     "keywords": [
       "Blanc",
       "Lumière",
@@ -1718,8 +1718,8 @@ const photos = [
   {
     "id": 67,
     "title": "Photo 67",
-    "src": "./images/photo-67.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-67.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-67.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-67.jpg",
     "keywords": [
       "Nuage",
       "Ciel",
@@ -1739,8 +1739,8 @@ const photos = [
   {
     "id": 69,
     "title": "Photo 69",
-    "src": "./images/photo-69.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-69.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-69.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-69.jpg",
     "keywords": [
       "Ciel",
       "Bâtiment",
@@ -1759,8 +1759,8 @@ const photos = [
   {
     "id": 70,
     "title": "Photo 70",
-    "src": "./images/photo-70.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-70.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-70.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-70.jpg",
     "keywords": [
       "Ciel",
       "Nuage",
@@ -1780,8 +1780,8 @@ const photos = [
   {
     "id": 71,
     "title": "Photo 71",
-    "src": "./images/photo-71.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-71.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-71.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-71.jpg",
     "keywords": [
       "Oiseau",
       "Bec",
@@ -1800,8 +1800,8 @@ const photos = [
   {
     "id": 72,
     "title": "Photo 72",
-    "src": "./images/photo-72.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-72.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-72.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-72.jpg",
     "keywords": [
       "Ciel",
       "Jour",
@@ -1821,8 +1821,8 @@ const photos = [
   {
     "id": 73,
     "title": "Photo 73",
-    "src": "./images/photo-73.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-73.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-73.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-73.jpg",
     "keywords": [
       "Bleu",
       "Eau",
@@ -1842,8 +1842,8 @@ const photos = [
   {
     "id": 74,
     "title": "Photo 74",
-    "src": "./images/photo-74.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-74.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-74.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-74.jpg",
     "keywords": [
       "Eau",
       "Ressources",
@@ -1863,8 +1863,8 @@ const photos = [
   {
     "id": 75,
     "title": "Photo 75",
-    "src": "./images/photo-75.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-75.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-75.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-75.jpg",
     "keywords": [
       "Manchot",
       "Oiseau",
@@ -1884,8 +1884,8 @@ const photos = [
   {
     "id": 76,
     "title": "Photo 76",
-    "src": "./images/photo-76.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-76.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-76.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-76.jpg",
     "keywords": [
       "Eau",
       "Ciel",
@@ -1905,8 +1905,8 @@ const photos = [
   {
     "id": 77,
     "title": "Photo 77",
-    "src": "./images/photo-77.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-77.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-77.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-77.jpg",
     "keywords": [
       "Carnivore",
       "Base",
@@ -1926,8 +1926,8 @@ const photos = [
   {
     "id": 78,
     "title": "Photo 78",
-    "src": "./images/photo-78.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-78.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-78.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-78.jpg",
     "keywords": [
       "Nuage",
       "Eau",
@@ -1947,8 +1947,8 @@ const photos = [
   {
     "id": 79,
     "title": "Photo 79",
-    "src": "./images/photo-79.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-79.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-79.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-79.jpg",
     "keywords": [
       "Voiture",
       "Bâtiment",
@@ -1968,8 +1968,8 @@ const photos = [
   {
     "id": 81,
     "title": "Photo 81",
-    "src": "./images/photo-81.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-81.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-81.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-81.jpg",
     "keywords": [
       "Chat",
       "Carnivore",
@@ -1989,8 +1989,8 @@ const photos = [
   {
     "id": 82,
     "title": "Photo 82",
-    "src": "./images/photo-82.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-82.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-82.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-82.jpg",
     "keywords": [
       "Voiture",
       "Roue",
@@ -2009,8 +2009,8 @@ const photos = [
   {
     "id": 84,
     "title": "Photo 84",
-    "src": "./images/photo-84.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-84.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-84.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-84.jpg",
     "keywords": [
       "Ciel",
       "Nuage",
@@ -2030,8 +2030,8 @@ const photos = [
   {
     "id": 85,
     "title": "Photo 85",
-    "src": "./images/photo-85.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-85.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-85.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-85.jpg",
     "keywords": [
       "Ciel",
       "Bâtiment",
@@ -2051,8 +2051,8 @@ const photos = [
   {
     "id": 86,
     "title": "Photo 86",
-    "src": "./images/photo-86.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-86.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-86.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-86.jpg",
     "keywords": [
       "Ciel",
       "Eau",
@@ -2072,8 +2072,8 @@ const photos = [
   {
     "id": 87,
     "title": "Photo 87",
-    "src": "./images/photo-87.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-87.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-87.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-87.jpg",
     "keywords": [
       "Ciel",
       "Nuage",
@@ -2093,8 +2093,8 @@ const photos = [
   {
     "id": 88,
     "title": "Photo 88",
-    "src": "./images/photo-88.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-88.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-88.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-88.jpg",
     "keywords": [
       "Ciel",
       "Eau",
@@ -2115,8 +2115,8 @@ const photos = [
   {
     "id": 90,
     "title": "Photo 90",
-    "src": "./images/photo-90.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-90.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-90.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-90.jpg",
     "keywords": [
       "Ciel",
       "Nuage",
@@ -2136,8 +2136,8 @@ const photos = [
   {
     "id": 91,
     "title": "Photo 91",
-    "src": "./images/photo-91.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-91.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-91.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-91.jpg",
     "keywords": [
       "Ciel",
       "Bâtiment",
@@ -2157,8 +2157,8 @@ const photos = [
   {
     "id": 92,
     "title": "Photo 92",
-    "src": "./images/photo-92.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-92.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-92.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-92.jpg",
     "keywords": [
       "Eau",
       "Ciel",
@@ -2179,8 +2179,8 @@ const photos = [
   {
     "id": 93,
     "title": "Photo 93",
-    "src": "./images/photo-93.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-93.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-93.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-93.jpg",
     "keywords": [
       "Bâtiment",
       "Ciel",
@@ -2199,8 +2199,8 @@ const photos = [
   {
     "id": 94,
     "title": "Photo 94",
-    "src": "./images/photo-94.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-94.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-94.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-94.jpg",
     "keywords": [
       "Chat",
       "Felidae",
@@ -2221,8 +2221,8 @@ const photos = [
   {
     "id": 55,
     "title": "Photo 55",
-    "src": "./images/photo-55.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-55.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-55.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-55.jpg",
     "keywords": [
       "Ciel",
       "Fenêtre",
@@ -2243,8 +2243,8 @@ const photos = [
   {
     "id": 95,
     "title": "Photo 95",
-    "src": "./images/photo-95.jpg",
-    "thumbnailSrc": "./images/thumbnails/photo-95.jpg",
+    "src": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/photo-95.jpg",
+    "thumbnailSrc": "https://res.cloudinary.com/ddcsplrer/image/upload/v1742153632/mes-images/thumbnails/photo-95.jpg",
     "keywords": [
       "Bâtiment",
       "Ciel",

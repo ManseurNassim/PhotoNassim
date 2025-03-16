@@ -7,7 +7,17 @@ const store = createStore({
   },
   getters: {
     allPhotos: (state) => state.photos,
-    photoById: (state) => (id) => state.photos.find(photo => photo.id === id),
+    photoById: (state) => (id) => {
+      const photo = state.photos.find(photo => photo.id === id);
+      return photo
+        ? {
+            ...photo,
+            original: photo.src,       // L'URL de l'image Cloudinary principale
+            thumbnail: photo.thumbnailSrc // L'URL de la miniature Cloudinary
+          }
+        : null;
+    },
+    
     photosByKeyword: (state) => (keyword) =>
       state.photos.filter(photo => 
         photo.keywords.some(kw => kw.toLowerCase().includes(keyword.toLowerCase()))

@@ -13,7 +13,8 @@
         class="photo-item"
         @click="openModal(photo.id)"
       >
-        <img :src="photo.thumbnailSrc" :alt="photo.title" class="photo-thumbnail" />
+        <img :src="photo.thumbnailSrc" :alt="photo.title" class="photo-thumbnail" loading="lazy" />
+
       </div>
     </div>
 
@@ -156,7 +157,7 @@ export default {
   cursor: pointer;
   overflow: hidden;
   border-radius: 5px;
-  transition: transform 0.2s;
+  transition: transform 0.3s;
   height: 150px;
   display: flex;
   align-items: center;

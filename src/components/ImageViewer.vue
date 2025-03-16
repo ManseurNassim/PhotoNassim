@@ -1,53 +1,43 @@
 <template>
-    <div v-if="isOpen" class="overlay" @click.self="closeViewer">
-      <div
-        class="image-viewer"
-        v-touch:swipe.left="nextImage"
-        v-touch:swipe.right="prevImage"
-      >
-        <button @click="prevImage" :disabled="currentIndex === 0">Précédent</button>
-        <img :src="images[currentIndex].src" :alt="images[currentIndex].title" />
-        <button @click="nextImage" :disabled="currentIndex === images.length - 1">Suivant</button>
-      </div>
+  <div v-if="isOpen" class="overlay" @click.self="closeViewer">
+    <div
+      class="image-viewer"
+      v-touch:swipe.left="nextImage"
+      v-touch:swipe.right="prevImage"
+    >
+      <button @click="prevImage" :disabled="currentIndex === 0">Précédent</button>
+      <picture>
+      <source :srcset="images[currentIndex].original" type="image/webp" />
+        <img 
+            :src="images[currentIndex].thumbnail" 
+            :data-src="images[currentIndex].original" 
+            class="lazyload"
+            alt="Photo en plein écran" 
+        />
+      </picture>
+
+      <button @click="nextImage" :disabled="currentIndex === images.length - 1">Suivant</button>
     </div>
-  </template>
-  
-  <script>
-  export default {
-    props: {
-      images: {
-        type: Array,
-        required: true
-      },
-      initialIndex: {
-        type: Number,
-        default: 0
-      }
-    },
-    data() {
-      return {
-        currentIndex: this.initialIndex,
-        isOpen: true
-      };
-    },
-    methods: {
-      closeViewer() {
-        this.isOpen = false;
-        this.$emit("close");
-      },
-      nextImage() {
-        if (this.currentIndex < this.images.length - 1) {
-          this.currentIndex++;
-        }
-      },
-      prevImage() {
-        if (this.currentIndex > 0) {
-          this.currentIndex--;
-        }
-      }
-    }
-  };
-  </script>
+  </div>
+</template>
+
+<script>
+export default {
+props: ["images", "isOpen", "currentIndex"],
+methods: {
+  closeViewer() {
+    this.$emit("close");
+  },
+  nextImage() {
+    this.$emit("update:currentIndex", this.currentIndex + 1);
+  },
+  prevImage() {
+    this.$emit("update:currentIndex", this.currentIndex - 1);
+  }
+}
+};
+</script>
+
   
   <style scoped>
   .overlay {

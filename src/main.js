@@ -7,6 +7,11 @@ import store from './store';
 import VueGtag from 'vue-gtag-next';
 import Vue3TouchEvents from 'vue3-touch-events';
 
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+
+
+
 // Création de l'application Vue
 const app = createApp(App);
 
