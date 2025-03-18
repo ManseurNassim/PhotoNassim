@@ -10,7 +10,7 @@
         <h2>Appareil photo</h2>
         <p>Canon EOS R100</p>
         <a href="https://store.canon.fr/canon-appareil-photo-hybride-canon-eos-r100-objectif-rf-s-18-45mm-f4-5-6-3-is-stm/6052C033/">
-        <img src="/images/cannon-eos.webp" alt="Canon EOS R100" class="equipment-photo" /></a>
+        <img src="https://res.cloudinary.com/ddcsplrer/image/upload/v1742153621/mes-images/cannon-eos-r100.jpg" alt="Canon EOS R100" class="equipment-photo" /></a>
       </div>
     </div>
     
@@ -21,7 +21,7 @@
         <h2>Objectif</h2>
         <p>RF-S 18-45mm F4.5 - F6.3 IS STM</p>
         <a href="https://store.canon.fr/canon-objectif-canon-rf-s-18-45mm-f4-5-6-3-is-stm/4858C005/">
-        <img src="/images/cannon-eos-r100-objectif.jpg" alt="RF-S 18-45mm F4.5-6.3 IS STM" class="equipment-photo" /></a>
+        <img src="https://res.cloudinary.com/ddcsplrer/image/upload/v1742153621/mes-images/cannon-eos-r100-objectif.jpg" alt="RF-S 18-45mm F4.5-6.3 IS STM" class="equipment-photo" /></a>
       </div>
     </div>
     
@@ -32,7 +32,7 @@
   <h2>Logiciel</h2>
   <p>Adobe Lightroom</p>
   <a href="https://www.adobe.com/fr/products/photoshop-lightroom.html" target="_blank">
-    <img src="/images/adobe-lightroom.jpg" alt="Adobe Lightroom" class="equipment-photo" />
+    <img src="https://res.cloudinary.com/ddcsplrer/image/upload/v1742153620/mes-images/adobe-lightroom.png" alt="Adobe Lightroom" class="equipment-photo" />
   </a>
 </div>
 

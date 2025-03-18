@@ -15,15 +15,15 @@
         <div class="editing-set">
           <div class="step">
             <div class="step-title">Photo Originale</div>
-            <img src="/images/exemple1_1.jpg" alt="Photo originale 1" class="editing-photo" />
+            <img src="https://res.cloudinary.com/ddcsplrer/image/upload/v1742153622/mes-images/exemple1_1.jpg" alt="Photo originale 1" class="editing-photo" />
           </div>
           <div class="step">
             <div class="step-title">Photo Recadrée</div>
-            <img src="/images/exemple1_2.jpg" alt="Photo recadrée 1" class="editing-photo" />
+            <img src="https://res.cloudinary.com/ddcsplrer/image/upload/v1742153623/mes-images/exemple1_2.jpg" alt="Photo recadrée 1" class="editing-photo" />
           </div>
           <div class="step">
             <div class="step-title">Photo Finale</div>
-            <img src="/images/exemple1_3.jpg" alt="Photo finale 1" class="editing-photo" />
+            <img src="https://res.cloudinary.com/ddcsplrer/image/upload/v1742153624/mes-images/exemple1_3.jpg" alt="Photo finale 1" class="editing-photo" />
           </div>
         </div>
 
@@ -31,15 +31,15 @@
         <div class="editing-set">
           <div class="step">
             <div class="step-title">Photo Originale</div>
-            <img src="/images/exemple2_1.jpg" alt="Photo originale 2" class="editing-photo" />
+            <img src="https://res.cloudinary.com/ddcsplrer/image/upload/v1742153625/mes-images/exemple2_1.jpg" alt="Photo originale 2" class="editing-photo" />
           </div>
           <div class="step">
             <div class="step-title">Photo Recadrée</div>
-            <img src="/images/exemple2_2.jpg" alt="Photo recadrée 2" class="editing-photo" />
+            <img src="https://res.cloudinary.com/ddcsplrer/image/upload/v1742153626/mes-images/exemple2_2.jpg" alt="Photo recadrée 2" class="editing-photo" />
           </div>
           <div class="step">
             <div class="step-title">Photo Finale</div>
-            <img src="/images/exemple2_3.jpg" alt="Photo finale 2" class="editing-photo" />
+            <img src="https://res.cloudinary.com/ddcsplrer/image/upload/v1742153628/mes-images/exemple2_3.jpg" alt="Photo finale 2" class="editing-photo" />
           </div>
         </div>
       </div>
