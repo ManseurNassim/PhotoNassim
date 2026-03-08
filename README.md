@@ -2,9 +2,6 @@
 
 Bienvenue sur le dépôt de mon portfolio de photographie personnel. Ce projet est conçu pour présenter mes clichés de voyage en haute résolution avec une expérience utilisateur fluide et immersive.
 
-> [!NOTE]
-> Ce projet est un portfolio personnel.
-
 ## 🚀 Fonctionnalités
 
 - **Galerie Dynamique** : Affichage des photos sous forme de grille optimisée (Masonry) et de showcase.
