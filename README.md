@@ -3,7 +3,7 @@
 Bienvenue sur le dépôt de mon portfolio de photographie personnel. Ce projet est conçu pour présenter mes clichés de voyage en haute résolution avec une expérience utilisateur fluide et immersive.
 
 > [!NOTE]
-> Ce projet est un portfolio personnel et n'est pas destiné à être réutilisé ou redistribué par des tiers.
+> Ce projet est un portfolio personnel.
 
 ## 🚀 Fonctionnalités
 
@@ -29,4 +29,5 @@ Ce projet repose sur une architecture moderne en Vue.js :
 Le site consomme un fichier `photos.json` généré automatiquement par des scripts internes. Ces scripts s'occupent de transformer les images brutes, de les uploader sur le cloud et de créer l'indexation nécessaire pour le moteur de recherche interne du site.
 
 ---
+
 © 2024-2025 Nassim Manseur
