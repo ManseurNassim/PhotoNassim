@@ -28,11 +28,18 @@
     <!-- Mobile Menu -->
     <div class="navbar-menu" :class="{ active: isMenuActive }">
       <ul class="navbar-links">
-
+        <li><router-link to="/" @click="closeMenu">Accueil</router-link></li>
+        <div class="menu-separator"></div>
         <li><router-link to="/photos" @click="closeMenu">Photos</router-link></li>
         <li><router-link to="/about" @click="closeMenu">À Propos</router-link></li>
         <li><router-link to="/equipment" @click="closeMenu">Matériel</router-link></li>
       </ul>
+
+      <div class="menu-social">
+        <a href="https://www.instagram.com/n4ssimm_" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
     </div>
   </nav>
 </template>
@@ -107,40 +114,46 @@ export default {
 
 /* Burger Menu Button */
 .navbar-burger {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   z-index: 3000;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-burger:hover {
+  background-color: var(--color-border);
 }
 
 .burger-line {
-  width: 24px;
-  height: 2px;
+  width: 20px;
+  height: 1.5px;
   background-color: var(--color-text-primary);
   position: relative;
-  transition: all var(--transition-speed) var(--transition-ease-smooth);
+  transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .burger-line::before,
 .burger-line::after {
   content: '';
   position: absolute;
-  width: 24px;
-  height: 2px;
+  width: 20px;
+  height: 1.5px;
   background-color: var(--color-text-primary);
-  transition: all var(--transition-speed) var(--transition-ease-smooth);
+  transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .burger-line::before {
-  top: -7px;
+  top: -6px;
   left: 0;
 }
 
 .burger-line::after {
-  top: 7px;
+  top: 6px;
   left: 0;
 }
 
@@ -166,7 +179,9 @@ export default {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   z-index: 2000;
   animation: fadeIn var(--transition-speed) var(--transition-ease-smooth);
 }
@@ -185,18 +200,24 @@ export default {
   position: fixed;
   top: 0;
   right: 0;
-  width: 280px;
+  width: 100%;
+  max-width: 320px;
   height: 100vh;
-  background: var(--color-bg);
-  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.1);
+  background: var(--color-overlay);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.05);
   z-index: 2500;
   transform: translateX(100%);
-  transition: transform var(--transition-speed) var(--transition-ease-smooth);
-  padding: 80px var(--spacing-md) var(--spacing-md);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 100px var(--spacing-md) var(--spacing-md);
+  display: flex;
+  flex-direction: column;
 }
 
 .dark-theme .navbar-menu {
-  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.3);
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.2);
+  background: rgba(15, 15, 15, 0.85);
 }
 
 .navbar-menu.active {
@@ -209,28 +230,87 @@ export default {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md);
+  gap: var(--spacing-sm);
 }
+
+.navbar-links li {
+  overflow: hidden;
+}
+
+.menu-separator {
+  height: 1px;
+  background: var(--color-border);
+  margin: var(--spacing-sm) 0;
+  width: 40px;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.6s var(--transition-ease-smooth);
+}
+
+.navbar-menu.active .menu-separator {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.navbar-menu.active .menu-separator:nth-of-type(1) { transition-delay: 0.15s; }
 
 .navbar-links a {
   font-family: var(--font-heading);
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: 2.2rem;
+  font-weight: 300;
   color: var(--color-text-primary);
   display: block;
-  padding: var(--spacing-sm) 0;
-  transition: all var(--transition-speed) ease;
-  border-bottom: 1px solid transparent;
+  padding: var(--spacing-xs) 0;
+  transition: all 0.4s var(--transition-ease-smooth);
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.navbar-menu.active .navbar-links a {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered animation for links */
+.navbar-menu.active .navbar-links li:nth-child(1) a { transition-delay: 0.1s; }
+.navbar-menu.active .navbar-links li:nth-child(3) a { transition-delay: 0.2s; }
+.navbar-menu.active .navbar-links li:nth-child(4) a { transition-delay: 0.25s; }
+.navbar-menu.active .navbar-links li:nth-child(5) a { transition-delay: 0.3s; }
+
+.menu-social {
+  margin-top: auto;
+  display: flex;
+  gap: var(--spacing-md);
+  padding-top: var(--spacing-lg);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.6s var(--transition-ease-smooth) 0.5s;
+}
+
+.navbar-menu.active .menu-social {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu-social a {
+  font-size: 1.5rem;
+  color: var(--color-text-primary);
+  opacity: 0.6;
+}
+
+.menu-social a:hover {
+  opacity: 1;
+  color: var(--color-accent);
 }
 
 .navbar-links a:hover {
   color: var(--color-accent);
-  border-bottom-color: var(--color-accent);
+  padding-left: 10px;
 }
 
 .navbar-links a.router-link-exact-active {
   color: var(--color-accent);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .navbar-desktop {
@@ -244,7 +324,9 @@ export default {
   text-decoration: none;
   color: var(--color-text-primary);
   font-family: var(--font-body);
-  font-size: 1rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   transition: opacity var(--transition-speed) var(--transition-ease-smooth);
 }
 

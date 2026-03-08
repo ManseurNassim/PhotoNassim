@@ -9,14 +9,14 @@
   >
     <div class="lightbox-overlay"></div>
 
-    <div class="lightbox-content" @click.stop>
+    <div class="lightbox-content">
       <button class="close-btn" @click="close" aria-label="Fermer">
         <i class="fas fa-times"></i>
       </button>
 
       <button
         class="nav-btn prev"
-        @click="prev"
+        @click.stop="prev"
         aria-label="Image précédente"
         v-if="hasMultiplePhotos && scale === 1"
       >
@@ -25,6 +25,7 @@
 
       <div
         class="image-container"
+        @click.stop
         @wheel="handleWheel"
         @mousedown="handleMouseDown"
         @mousemove="handleMouseMove"
@@ -49,7 +50,7 @@
 
       <button
         class="nav-btn next"
-        @click="next"
+        @click.stop="next"
         aria-label="Image suivante"
         v-if="hasMultiplePhotos && scale === 1"
       >
