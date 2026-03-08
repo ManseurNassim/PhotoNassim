@@ -130,15 +130,14 @@ export default {
   text-align: center;
   color: #ffffff;
   z-index: 10;
-  padding: var(--spacing-md) var(--spacing-lg);
-  background: rgba(15, 15, 15, 0.6);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: rgba(15, 15, 15, 0.3);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   border-radius: 12px;
   max-width: 90%;
   width: auto;
   text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
@@ -163,7 +162,7 @@ export default {
 
 @media (min-width: 768px) {
   .slide-content {
-    padding: var(--spacing-lg) var(--spacing-xl);
+    padding: var(--spacing-md) var(--spacing-lg);
     max-width: 80%;
   }
   
