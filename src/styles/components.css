@@ -1,0 +1,113 @@
+/* ========================================
+   SHARED COMPONENT STYLES
+   ======================================== */
+
+/* Page Container */
+.page-container {
+  min-height: 100vh;
+  padding: var(--spacing-xl) var(--spacing-md);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Page Header */
+.page-header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.page-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  margin-bottom: var(--spacing-sm);
+}
+
+.page-subtitle {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+  font-weight: 300;
+}
+
+/* Content Section */
+.content-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-primary);
+}
+
+/* Card Component */
+.card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-subtle);
+  transition: box-shadow var(--transition-speed) var(--transition-ease-smooth);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-medium);
+}
+
+/* Text Content */
+.text-content {
+  line-height: 1.8;
+  color: var(--color-text-primary);
+}
+
+.text-content p {
+  margin-bottom: var(--spacing-md);
+}
+
+/* Image with Caption */
+.image-wrapper {
+  margin: var(--spacing-lg) 0;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: var(--shadow-subtle);
+}
+
+.image-caption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  margin-top: var(--spacing-sm);
+  font-style: italic;
+}
+
+/* List Styles */
+.styled-list {
+  list-style: none;
+  padding: 0;
+}
+
+.styled-list li {
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.styled-list li:last-child {
+  border-bottom: none;
+}
+
+/* Two Column Layout */
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+}

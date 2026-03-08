@@ -9,6 +9,9 @@ import Vue3TouchEvents from 'vue3-touch-events';
 
 import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+import '@fortawesome/fontawesome-free/css/all.css';
+import './styles/main.css';
+import './styles/components.css';
 
 
 

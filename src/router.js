@@ -1,12 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import PhotosPage from './components/PhotoPage.vue';
-import AboutPage from './components/AboutPage.vue';
-import EquipmentPage from './components/EquipmentPage.vue';
-import HomePage from './components/HomePage.vue';
+import HomePage from './views/HomePage.vue';
+import PhotoPage from './views/PhotoPage.vue';
+import AboutPage from './views/AboutPage.vue';
+import EquipmentPage from './views/EquipmentPage.vue';
 
 const routes = [
   { path: '/', name: 'home', component: HomePage },
-  { path: '/photos', name: 'photos', component: PhotosPage },
+  { path: '/photos', name: 'photos', component: PhotoPage },
   { path: '/about', name: 'about', component: AboutPage },
   { path: '/equipment', name: 'equipment', component: EquipmentPage },
 ];

@@ -1,0 +1,86 @@
+name: Build Photo Metadata & Deploy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'photos_input/**'
+      - 'scripts/build-photos-metadata.js'
+      - '.github/workflows/update-photos.yml'
+  workflow_dispatch: # Permet de déclencher manuellement
+
+jobs:
+  build-metadata:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Create Google Vision credentials
+        run: |
+          mkdir -p ${{ github.workspace }}
+          echo '${{ secrets.GOOGLE_VISION_KEY_JSON }}' > google-vision-key.json
+      
+      - name: Build photo metadata
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: google-vision-key.json
+          CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+        run: npm run build-metadata
+      
+      - name: Commit and push changes
+        run: |
+          git config user.name "Photo Bot"
+          git config user.email "action@github.com"
+          git add src/data/photos.json
+          git add public/thumbnails/ 2>/dev/null || true
+          
+          if git diff --cached --quiet; then
+            echo "✅ Aucun changement à commiter"
+          else
+            git commit -m "🤖 Auto: Update photo metadata [skip ci]"
+            git push
+          fi
+  
+  deploy:
+    needs: build-metadata
+    runs-on: ubuntu-latest
+    if: success()
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Build app
+        run: npm run build
+      
+      - name: Deploy to Vercel
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+        run: |
+          npm install -g vercel
+          vercel deploy --prod --token $VERCEL_TOKEN

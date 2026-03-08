@@ -1,126 +1,95 @@
 <template>
   <div id="app" :class="{ 'dark-theme': isDarkTheme }">
-    <!-- Inclure la barre de navigation -->
     <NavBar :class="{ hidden: isHidden }" />
-    <!-- Afficher la vue correspondante à la route -->
-    <router-view />
-    <!-- Ajouter le bouton de changement de thème -->
-    <ThemeToggleButton :class="{ hidden: isHidden }" @click="toggleTheme" />
+    
+    <router-view v-slot="{ Component }">
+      <transition name="fade-page" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
+
+    <!-- Global Lightbox -->
+    <PhotoLightbox
+      :isOpen="isLightboxOpen"
+      :photos="lightboxPhotos"
+      :initialIndex="lightboxIndex"
+      @close="closeLightbox"
+      @change-photo="changePhoto"
+    />
   </div>
 </template>
 
 <script>
-import NavBar from './components/NavBar.vue';
-import ThemeToggleButton from './components/ThemeToggleButton.vue';
-import { ref, onMounted, onBeforeUnmount } from 'vue';
+import NavBar from "./components/layout/NavBar.vue";
+import PhotoLightbox from "./components/gallery/PhotoLightbox.vue";
+import { ref, computed } from "vue";
+import { useStore } from "vuex";
+import { useScrollDirection } from "./composables/useScrollDirection";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     NavBar,
-    ThemeToggleButton,
+    PhotoLightbox,
   },
   setup() {
+    const store = useStore();
     const isDarkTheme = ref(false);
-    const lastScrollTop = ref(0);
-    const isHidden = ref(false);
+    const { isHidden } = useScrollDirection();
 
-    // Fonction pour basculer le thème sombre
+    // Lightbox Global Logic
+    const isLightboxOpen = computed(() => store.getters.isLightboxOpen);
+    const lightboxPhotos = computed(() => store.getters.lightboxPhotos);
+    const lightboxIndex = computed(() => store.getters.lightboxCurrentIndex);
+
+    const closeLightbox = () => {
+      store.commit("CLOSE_LIGHTBOX");
+    };
+
+    const changePhoto = (index) => {
+      store.commit("SET_LIGHTBOX_INDEX", index);
+    };
+
+    // Basculer le thème (géré par ThemeToggleButton)
     const toggleTheme = () => {
       isDarkTheme.value = !isDarkTheme.value;
-      document.body.classList.toggle('dark-theme', isDarkTheme.value);
+      document.body.classList.toggle("dark-theme", isDarkTheme.value);
     };
-
-    // Fonction pour gérer le défilement
-    const handleScroll = () => {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-      // Vérifier si on est en mode portrait (mobile)
-      if (window.innerHeight > window.innerWidth) {
-        if (scrollTop > lastScrollTop.value) {
-          // Si on défile vers le bas, cacher les icônes
-          isHidden.value = true;
-        } else {
-          // Si on défile vers le haut, afficher les icônes
-          isHidden.value = false;
-        }
-        lastScrollTop.value = scrollTop;
-      }
-    };
-
-    // Ajouter et retirer l'écouteur de défilement au montage/démontage du composant
-    onMounted(() => {
-      window.addEventListener('scroll', handleScroll);
-    });
-
-    onBeforeUnmount(() => {
-      window.removeEventListener('scroll', handleScroll);
-    });
 
     return {
       isDarkTheme,
       toggleTheme,
       isHidden,
+      // Lightbox
+      isLightboxOpen,
+      lightboxPhotos,
+      lightboxIndex,
+      closeLightbox,
+      changePhoto,
     };
   },
 };
 </script>
 
 <style>
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  transition: background-color 0.2s; /* Transition pour le changement de fond */
-}
-
-/* Styles généraux pour le conteneur de l'application */
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-  height: 100%;
-  transition: color 0.2s; /* Transition pour le changement de couleur */
+  min-height: 100vh;
+  padding-top: 80px; /* Space for fixed navbar */
 }
 
-/* Dark theme styles */
-.dark-theme {
-  background-color: #121212; /* Couleur de fond en mode nuit */
-  color: #e0e0e0; /* Couleur de texte en mode nuit */
+/* Page Transitions */
+.fade-page-enter-active,
+.fade-page-leave-active {
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-.dark-theme h1 {
-  color: #ffffff; /* Couleur des titres en mode nuit */
-}
-
-.dark-theme .photo-item {
-  background-color: #1e1e1e; /* Couleur de fond des éléments photo en mode nuit */
-}
-
-.dark-theme .photo-view-container {
-  background-color: rgba(0, 0, 0, 0.8); /* Couleur de fond de la vue photo en mode nuit */
-}
-
-.dark-theme .photo-view-image {
-  border: 1px solid #ffffff; /* Bordure des images en mode nuit */
-}
-
-/* Classe pour cacher la navbar et les icônes */
-.hidden {
-  visibility: hidden;
+.fade-page-enter-from {
   opacity: 0;
-  transition: 0.3s;
+  transform: translateY(10px);
 }
 
-/* Supprimez le style de fond de la navbar lorsqu'elle est cachée */
-.navbar.hidden {
-  background-color: transparent; /* Pas de couleur de fond pour la navbar cachée */
-}
-
-/* Styles spécifiques pour la NavBar en mode sombre */
-.dark-theme .navbar {
-  background-color: transparent; /* Pas de couleur de fond pour la NavBar visible */
-  color: #ffffff; /* Couleur du texte de la navbar en mode sombre */
+.fade-page-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
 }
 </style>
